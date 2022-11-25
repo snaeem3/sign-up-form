@@ -1,0 +1,52 @@
+:root {
+    --section-padding: 16px;
+}
+
+img {
+    max-width: 100%;
+    max-height: min(100%,100vh);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    display: flex;
+    background: white;
+    height: 100%;
+    align-items: center;
+}
+
+
+#description {
+    padding: var(--section-padding);
+}
+
+#signup-container {
+    background: rgb(240, 240, 240);
+    padding: var(--section-padding);
+}
+
+form {
+    padding: var(--section-padding);
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#side-image-container {
+    position:relative;
+    text-align: center;
+    height: 100vh;
+}
+
+#side-image-container p {
+    position: absolute;
+    bottom: 1%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(233, 233, 233, 0.2)
+}

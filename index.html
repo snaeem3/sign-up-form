@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="side-image-container">
-        <!-- <img src="../images/food.jpg" alt="Plates of food"> -->
+        <img src="../images/food.jpg" alt="Plates of food">
         <p>Photo by <a href="https://unsplash.com/@kaboompics">Karolina Grabowska</a> on <a href="https://unsplash.com/photos/HtTBzytfJ9I">Unsplash</a></p>
     </div>
     <main>
@@ -20,16 +20,17 @@
         <div id="signup-container">
             <h3>Sign up today!</h3>
             <form action="">
-                <label for="first_name">First Name</label><input type="text" id="first_name">
-                <label for="last_name">Last Name</label><input type="text" id="last_name">
+                <label for="first_name">First Name</label><input type="text" id="first_name" required>
+                <label for="last_name">Last Name</label><input type="text" id="last_name" required>
                 <label for="email">E-mail</label><input type="email" id="last_name" required>
                 <label for="phone_number">Phone Number</label><input type="tel" id="phone_number">
                 <label for="password">Password</label><input type="password" name="password" id="password">
                 <label for="confirm_password">Confirm Password</label><input type="password" name="confirm_password" id="confirm_password">
+                <input type="submit" value="Sign Up">
             </form>
         </div>
         <div id="account">
-            <button type="submit" id="create-account">Create Account</button>
+            <!-- <button type="submit" id="create-account">Create Account</button> -->
         </div>
     </main>
 </body>
