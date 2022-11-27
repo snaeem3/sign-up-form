@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
 :root {
     --section-padding: 16px;
     font-size: 18px;
@@ -75,12 +77,12 @@ label {
 }
 
 input {
-    border: 2px solid rgb(173, 173, 173);
+    border: 1px solid rgb(173, 173, 173);
     border-radius: 4px;
 }
 
 input:focus {
-    border: 2px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     outline: 2px solid rgb(206, 110, 0);
 }
 
@@ -143,6 +145,7 @@ input[type=submit] {
     align-items: center;
     justify-content: center;
     padding: var(--section-padding);
+    font-family: 'Viga', sans-serif;
 }
 
 #logo-container img {
