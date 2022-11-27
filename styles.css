@@ -1,8 +1,7 @@
 :root {
     --section-padding: 16px;
+    font-size: 18px;
 }
-
-
 
 * {
     margin: 0;
@@ -36,13 +35,49 @@ main {
 #signup-container {
     background: rgb(240, 240, 240);
     padding: var(--section-padding);
+    box-shadow: 5px 10px 8px #888888;
 }
 
 form {
     padding: var(--section-padding);
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 5fr;
+    column-gap: 8px;
+    row-gap: 10px;
 }
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 4px;
+}
+
+label {
+    color: #B4886B;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#account {
+    padding: var(--section-padding) 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+input[type=submit] {
+    padding: 10px 40px;
+    text-decoration: none;
+    font-size: 16px;
+    background:rgb(206, 110, 0);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 2px 2px 4px #888888;
+}
+
 
 #side-banner-container {
     position:relative;
@@ -52,22 +87,31 @@ form {
     height: 100vh;
     background-image: url(/images/food.jpg);
     background-size: cover;
+    min-height: 200px;
+    min-width: 400px;
+    display: flex;
 }
 
 #logo-container {
     background:rgba(22, 22, 22, 0.658);
-    position: relative;
-    top: 40%;
+    /* position: relative;
+    top: 40%; */
+    align-self: flex-start;
+    margin-top: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--section-padding);
 }
 
 #logo-container img {
-    width: 10%;
+    width: 20%;
     height: fit-content;
 }
 
 #side-banner-container h1{
     color: white;
-    font-size: 64px;
+    /* font-size: 64px; */
     padding: 16px 0;
 }
 
@@ -77,4 +121,8 @@ form {
     right: 1%;
     color: white;
     background: rgba(233, 233, 233, 0.2)
+}
+
+a {
+    text-decoration: none;
 }
