@@ -2,10 +2,10 @@
     --section-padding: 16px;
 }
 
-img {
-    max-width: 100%;
-    max-height: min(100%,100vh);
-}
+/* img {
+    width: 100%;
+    height: fit-content;
+} */
 
 * {
     margin: 0;
@@ -16,10 +16,17 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: flex;
     background: white;
-    height: 100%;
     align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+    body {
+      flex-direction: column;
+    }
+    #side-image-container {
+        max-height: 30vh;
+    }
+}
 
 #description {
     padding: var(--section-padding);
@@ -39,12 +46,23 @@ form {
 #side-image-container {
     position:relative;
     text-align: center;
+    width: max-content;
     height: 100vh;
+    background-image: url(/images/food.jpg);
+    background-size: cover;
+}
+
+#side-image-container h1{
+    color: white;
+    font-size: 64px;
+    background:rgba(22, 22, 22, 0.658);
+    position: relative;
+    top: 50%;
 }
 
 #side-image-container p {
-    position: absolute;
-    bottom: 1%;
+    position: relative;
+    bottom: 2%;
     left: 50%; 
     transform: translate(-50%, -50%);
     color: white;
