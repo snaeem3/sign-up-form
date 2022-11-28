@@ -19,7 +19,7 @@ body {
     align-items: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     body {
       flex-direction: column;
     }
@@ -76,6 +76,10 @@ label {
     gap: 16px;
 }
 
+.input-section {
+    width: 180px;
+}
+
 input {
     border: 1px solid rgb(173, 173, 173);
     border-radius: 4px;
@@ -104,6 +108,7 @@ input:not(:focus):not(:placeholder-shown):invalid {
     opacity: 0;
     font-weight: bold;
     padding: 4px;
+    word-wrap: break-word;
 }
 input:not(:focus):not(:placeholder-shown):invalid ~ .error-message {
     display: block;
