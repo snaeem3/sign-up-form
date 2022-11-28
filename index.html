@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Sign-Up Form</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div id="side-banner-container">
@@ -29,13 +30,16 @@
             <form id="signup" action="">
                 <div class="input-section"><label for="first_name">First Name*</label><input type="text" id="first_name" required placeholder=" "></div>
                 <div class="input-section"><label for="last_name">Last Name*</label><input type="text" id="last_name" required placeholder=" "></div>
-                <div class="input-section"><label for="email">E-mail*</label><input type="email" id="last_name" required placeholder=" "></div>
+                <div class="input-section"><label for="email">E-mail*</label><input type="email" id="email" required placeholder=" "></div>
                 <div class="input-section"><label for="phone_number">Phone Number</label><input type="tel" id="phone_number" placeholder=" "></div>
                 <div class="input-section">
                     <label for="password">Password*</label><input type="password" name="password" id="password" required minlength="6" placeholder=" ">
                     <p class="error-message">Must contain at least 6 characters</p>
                 </div>
-                <div class="input-section"><label for="confirm_password">Confirm Password*</label><input type="password" name="confirm_password" id="confirm_password" required placeholder=" "></div>
+                <div class="input-section">
+                    <label for="confirm_password">Confirm Password*</label><input type="password" name="confirm_password" id="confirm_password" required minlength="6" placeholder=" ">
+                    <p id="conf-pass-error" class="error-message">Passwords must match and contain at least 6 characters</p>
+                </div>
                 <!-- <input type="submit" value="Sign Up"> -->
                 <p>*Required field</p>
             </form>
