@@ -133,7 +133,7 @@ input[type=submit] {
     width: max-content;
     max-width: 50vh;
     height: 100vh;
-    background-image: url(/images/food.jpg);
+    background-image: url(images/food.jpg);
     background-size: cover;
     min-height: 200px;
     min-width: 400px;
